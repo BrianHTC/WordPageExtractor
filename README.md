@@ -46,7 +46,7 @@ The Traditional Chinese Version is built to display instructions that are plain 
 
 ## How to Use
 
-1. Put `WordPageExtractor.bat` and `RepoEN.ps1` in the same folder.
+1. Download WordPageExtractor_EN.zip ,and unzip it. Make sure to put `WordPageExtractor.bat` and `RepoEN.ps1` in the same folder.
 2. Double-click `WordPageExtractor.bat`.
 3. When prompted for the Word file path:
    - Right-click the Word document you want to split.
