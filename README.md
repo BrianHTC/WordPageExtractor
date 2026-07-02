@@ -58,7 +58,7 @@ The Traditional Chinese Version is built to display instructions that are plain 
 
 ## 如何使用
 
-1. 下載 點兩下這個.bat 和 RepoGrandmaCH.ps1 這兩個檔案，並放於同個資料夾內。
+1. 下載WordPageExtractor_GrandmaCH.zip這個檔案並解壓縮。
 2. 點兩下 點兩下這個.bat ，若有白色視窗跳出來就選擇「仍要執行」，之後照著黑色視窗跳出來的綠色字指示做。
 3. 要分離的頁數可以選擇單頁或多頁，像是：1或是1-3，也可以選擇不連續的頁碼，但要用英文逗號「,」把他們分開，像是：1-3,5,8-10就會選擇第1到3頁、第5頁跟第8到10頁。
 4. 選好範圍之後可以選擇需要的檔案數量，按C(大小寫都可以)會選擇將所選頁碼都擷取至同一個Word檔裡，按S(大小寫都可以)會選擇將所選範圍以英文逗號「,」為分界分別擷取至不同Word檔裡。
