@@ -3,11 +3,11 @@ setlocal EnableExtensions
 chcp 65001 >nul
 cd /d "%~dp0"
 
-set "PS1FILE=%~dp0RepoEN.ps1"
+set "PS1FILE=%~dp0RepoGrandmaCH.ps1"
 
 if not exist "%PS1FILE%" (
     echo Error: PowerShell script not found.
-    echo Please make sure the .bat file and RepoEN.ps1 are in the same folder.
+    echo Please make sure the .bat file and RepoGrandmaCH.ps1 are in the same folder.
     echo.
     powershell.exe -NoLogo -NoProfile -Command "Write-Host '執行完畢，按Enter鍵以關閉本視窗' -ForegroundColor Green"
     pause >nul
