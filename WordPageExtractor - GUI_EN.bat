@@ -1,0 +1,30 @@
+@echo off
+setlocal EnableExtensions
+chcp 65001 >nul
+cd /d "%~dp0"
+
+set "PS1FILE=%~dp0RepoENGUI.ps1"
+
+if not exist "%PS1FILE%" (
+    echo Error: PowerShell script not found.
+    echo Please make sure the .bat file and RepoCH.ps1 are in the same folder.
+    echo.
+    powershell.exe -NoLogo -NoProfile -Command "Write-Host 'Press any key to close this window...' -ForegroundColor Green"
+    pause >nul
+    exit /b 1
+)
+
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -STA -File "%PS1FILE%" -OpenOutputFolder
+
+set "ERR=%ERRORLEVEL%"
+
+if not "%ERR%"=="0" (
+    echo.
+    echo PowerShell script returned an error. ErrorLevel: %ERR%
+    echo.
+    powershell.exe -NoLogo -NoProfile -Command "Write-Host 'Press any key to close this window...' -ForegroundColor Green"
+    pause >nul
+    exit /b %ERR%
+)
+
+exit /b 0
